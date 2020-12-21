@@ -5,19 +5,15 @@ require 'stringio'
 
 
 
-n = gets.to_i
-
-if n.odd? == true
-    print 'Weird'
-end
-if n.even? == true
-    if n == (2..5)
-        print 'Not Weird'
-    end
-    if n == (6..20)
-        print 'Weird'
-    end
-    if n > 20
-        print 'Not Weird'
-    end
+N = gets.to_i
+if N % 2 != 0
+   print "Weird"
+else
+   if N >= 2 and N <= 5
+       print "Not Weird"
+   elsif N >= 6 and N<=20
+       print "Weird"
+   else
+       print "Not Weird"
+   end
 end
